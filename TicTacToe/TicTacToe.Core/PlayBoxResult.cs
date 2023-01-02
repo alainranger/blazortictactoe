@@ -5,6 +5,7 @@ public enum PlayBoxResult
     GameEnded,
     Replay,
     Win,
-    Draw
+    Draw,
+    GameContinue
 }
 

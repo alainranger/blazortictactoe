@@ -40,14 +40,17 @@ public class Board
 
         CurrentPlayer = CurrentPlayer % 2 + 1;
 
-        throw new NotImplementedException();
-        //return TestDraw() ? PlayBoxResult.Draw;
+        if (TestDraw())
+            return PlayBoxResult.Draw;
+
+        return PlayBoxResult.GameContinue;
     }
 
     private bool TestWin(int x, int y) => TestV(x, y) == 3 || TestH(x, y) == 3 || TestD1(x, y) == 3 || TestD2(x, y) == 3;
 
     private bool TestDraw()
     {
+        return false;
         throw new NotImplementedException();
     }
 
@@ -197,4 +200,3 @@ public class Board
         Console.WriteLine(msg);
     }
 }
-
