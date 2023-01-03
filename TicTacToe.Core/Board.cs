@@ -22,7 +22,6 @@ public class Board
     // if IsWin == true : the game is ended with a winner.  restart the game
     // if Played box is != than 0.  the box is already played.  choose an other box.
     // if TestWin return true.  Current Win.
-    // 
     public PlayBoxResult PlayBox(int x, int y)
     {
         if (IsWin)
@@ -33,7 +32,9 @@ public class Board
 
         Boxes[x, y] = CurrentPlayer;
 
-        if (TestWin(x, y))
+        IsWin = TestWin(x, y);
+
+        if (IsWin)
         {
             return PlayBoxResult.Win;
         }
