@@ -86,7 +86,7 @@ public class ElligibleMoves
         public int X { get; set; }
         public int Y { get; set; }
         public int[,] ExpectedBoxes { get; set; }
-        public PlayBoxResult ExpectedResult { get; set; }
+        public playBoxResult ExpectedResult { get; set; }
     }
 
     private PlayerInput[] Get_Player_PlayBox_Return_Win_Inputs() => new PlayerInput[]
@@ -99,7 +99,7 @@ public class ElligibleMoves
                 { 1, 0, 0 },
                 { 0, 0, 0 },
                 { 0, 0, 0 }
-            }, ExpectedResult = PlayBoxResult.GameContinue
+            }, ExpectedResult = playBoxResult.GameContinue
         },
         new PlayerInput
         {
@@ -111,7 +111,7 @@ public class ElligibleMoves
                 { 2, 0, 0 },
                 { 0, 0, 0 }
             },
-            ExpectedResult = PlayBoxResult.GameContinue
+            ExpectedResult = playBoxResult.GameContinue
         },
         new PlayerInput
         {
@@ -123,7 +123,7 @@ public class ElligibleMoves
                 { 2, 0, 0 },
                 { 0, 0, 0 }
             },
-            ExpectedResult = PlayBoxResult.GameContinue
+            ExpectedResult = playBoxResult.GameContinue
         },
         new PlayerInput
         {
@@ -135,7 +135,7 @@ public class ElligibleMoves
                 { 2, 2, 0 },
                 { 0, 0, 0 }
             },
-            ExpectedResult = PlayBoxResult.GameContinue
+            ExpectedResult = playBoxResult.GameContinue
         },
         new PlayerInput
         {
@@ -147,7 +147,7 @@ public class ElligibleMoves
                 { 2, 2, 0 },
                 { 0, 0, 0 }
             },
-            ExpectedResult = PlayBoxResult.Win
+            ExpectedResult = playBoxResult.Win
         },
     };
 
@@ -162,7 +162,7 @@ public class ElligibleMoves
                 { 0, 0, 0 },
                 { 0, 0, 0 }
             },
-            ExpectedResult = PlayBoxResult.GameContinue
+            ExpectedResult = playBoxResult.GameContinue
         }
     };
 
@@ -177,7 +177,7 @@ public class ElligibleMoves
                 { 0, 0, 0 },
                 { 0, 0, 0 }
             },
-            ExpectedResult = PlayBoxResult.GameContinue
+            ExpectedResult = playBoxResult.GameContinue
         },
         new PlayerInput
         {
@@ -188,7 +188,7 @@ public class ElligibleMoves
                 { 0, 0, 0 },
                 { 0, 0, 0 }
             },
-            ExpectedResult = PlayBoxResult.Replay
+            ExpectedResult = playBoxResult.Replay
         }
     };
 
@@ -202,7 +202,7 @@ public class ElligibleMoves
                 { 1, 0, 0 },
                 { 0, 0, 0 },
                 { 0, 0, 0 }
-            }, ExpectedResult = PlayBoxResult.GameContinue
+            }, ExpectedResult = playBoxResult.GameContinue
         },
         new PlayerInput
         {
@@ -214,7 +214,7 @@ public class ElligibleMoves
                 { 2, 0, 0 },
                 { 0, 0, 0 }
             },
-            ExpectedResult = PlayBoxResult.GameContinue
+            ExpectedResult = playBoxResult.GameContinue
         },
         new PlayerInput
         {
@@ -226,7 +226,7 @@ public class ElligibleMoves
                 { 2, 0, 0 },
                 { 0, 0, 0 }
             },
-            ExpectedResult = PlayBoxResult.GameContinue
+            ExpectedResult = playBoxResult.GameContinue
         },
         new PlayerInput
         {
@@ -238,7 +238,7 @@ public class ElligibleMoves
                 { 2, 2, 0 },
                 { 0, 0, 0 }
             },
-            ExpectedResult = PlayBoxResult.GameContinue
+            ExpectedResult = playBoxResult.GameContinue
         },
         new PlayerInput
         {
@@ -250,7 +250,7 @@ public class ElligibleMoves
                 { 2, 2, 0 },
                 { 0, 0, 0 }
             },
-            ExpectedResult = PlayBoxResult.Win
+            ExpectedResult = playBoxResult.Win
         },
         new PlayerInput
         {
@@ -262,7 +262,7 @@ public class ElligibleMoves
                 { 2, 2, 0 },
                 { 0, 0, 0 }
             },
-            ExpectedResult = PlayBoxResult.GameEnded
+            ExpectedResult = playBoxResult.GameEnded
         }
     };
 
@@ -277,7 +277,7 @@ public class ElligibleMoves
                 { 0, 0, 0 },
                 { 0, 0, 0 }
             },
-            ExpectedResult = PlayBoxResult.GameContinue
+            ExpectedResult = playBoxResult.GameContinue
         }
     };
 }

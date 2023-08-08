@@ -1,6 +1,6 @@
 ﻿namespace TicTacToe.Core;
 
-public enum PlayBoxResult
+public enum playBoxResult
 {
     GameEnded,
     Replay,

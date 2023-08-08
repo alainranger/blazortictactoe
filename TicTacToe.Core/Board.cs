@@ -22,13 +22,13 @@ public class Board
     // if IsWin == true : the game is ended with a winner.  restart the game
     // if Played box is != than 0.  the box is already played.  choose an other box.
     // if TestWin return true.  Current Win.
-    public PlayBoxResult PlayBox(int x, int y)
+    public playBoxResult PlayBox(int x, int y)
     {
         if (IsWin)
-            return PlayBoxResult.GameEnded;
+            return playBoxResult.GameEnded;
 
         if (Boxes[x, y] != 0)
-            return PlayBoxResult.Replay;
+            return playBoxResult.Replay;
 
         Boxes[x, y] = CurrentPlayer;
 
@@ -36,15 +36,15 @@ public class Board
 
         if (IsWin)
         {
-            return PlayBoxResult.Win;
+            return playBoxResult.Win;
         }
 
         CurrentPlayer = CurrentPlayer % 2 + 1;
 
         if (TestDraw())
-            return PlayBoxResult.Draw;
+            return playBoxResult.Draw;
 
-        return PlayBoxResult.GameContinue;
+        return playBoxResult.GameContinue;
     }
 
     private bool TestWin(int x, int y) => TestV(x, y) == 3 || TestH(x, y) == 3 || TestD1(x, y) == 3 || TestD2(x, y) == 3;
